@@ -252,17 +252,17 @@ section.socialmedia p{
     margin: 0;
     padding: 30px;
     color: #385959;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
 }
 
 div ul.social-media-list{
-    width: 200px;
+    width: 300px;
     margin: auto;
     padding: 0;
-    color: #385959;
+    color: #FCB69F;
     transition: 0.3s ease 0s;
     display: flex;
     justify-content: space-around;
@@ -274,15 +274,18 @@ div ul.social-media-list li{
     padding: 0;
 }
 
-div ul.social-media-list li a{
-    font-size: 50px;
-    color: rgba(58,89,89,0.65);
+ul.social-media-list li a img{
+    width: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    background: #FFECD2;
+    transition: all 0.3s ease 0s;
 }
 
-div ul.social-media-list li a:hover{
-    transition: all 0.3s ease 0s;
-    font-size: 55px;
-    color: rgba(58,89,89, 1.0);
+div ul.social-media-list li a img:hover{   
+    background: linear-gradient( rgba(252, 182, 159, 0.85), rgba(252, 182, 159, 0.15));
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.55);
+    /* background: #FFECD2; */
 }
 
 /* FOOTER */
@@ -334,6 +337,10 @@ footer nav ul li a:hover{
         justify-content: space-around;
         width: 80%;
    }
+   section.socialmedia p{
+       font-size: 20px;
+       letter-spacing: 2px;
+   }
 }
 
 @media screen and (max-width: 768px){
@@ -371,7 +378,7 @@ footer nav ul li a:hover{
     } */
 
     .nav-links li{
-        opacity: 0;
+        display: none;
     }
 
     header nav .language{
@@ -448,5 +455,120 @@ footer nav ul li a:hover{
     }
     footer nav{
         height: 200px;
+    }
+    
+    section.socialmedia{
+        height: 100px;
+    }
+    
+    section.socialmedia p{
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
+
+    div ul.social-media-list{
+        width: 150px;
+    }
+
+    div ul.social-media-list li a img{
+       max-width: 35px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .hero-image {
+        height: 250px;
+    }
+    
+    .hero-text img{
+        width: 200px;
+        text-align: center;
+    }
+
+    .hero-text p{
+        font-size: 14px;
+        letter-spacing: 3px;
+        padding-top: unset;
+    }
+
+    h1{
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .aboutme{
+        height: 375px;
+    }
+
+    .aboutme .wrapper{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+
+    .aboutme img{
+        width: 150px;
+        float: none;
+        margin: 10px;
+    }
+
+    .aboutme p{
+        text-align: center;
+        width: 250px;
+        margin: auto;
+    }
+
+    .myworkshops{
+        height: 300px;
+    }
+    
+    .myworkshops p{
+        margin: auto;
+        width: 240px;
+    }
+
+    .myworkshops a{
+        font-size: 12px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+    }
+
+    body section.eyes div{
+        height: 50px;
+    }
+    footer ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2em;
+    }
+    footer nav{
+        height: 200px;
+    }
+    
+    section.socialmedia{
+        height: 80px;
+    }
+    
+    section.socialmedia p{
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 5px;
+    }
+
+    div ul.social-media-list{
+        width: 120px;
+    }
+
+    div ul.social-media-list li a img{
+       max-width: 35px;
     }
 }
