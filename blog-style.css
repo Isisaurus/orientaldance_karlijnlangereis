@@ -1,0 +1,39 @@
+body{
+    margin: auto;
+    padding: 0 px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: #385959;
+}
+
+h1{
+    font-family: 'GFS Didot', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    display: inline-block;
+    border-bottom: 2px solid currentColor;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.85em;
+    letter-spacing: 2px;
+}
+
+div{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #FFECD2;
+}
+
+img{
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 50px 0px 20px 0px;
+}
