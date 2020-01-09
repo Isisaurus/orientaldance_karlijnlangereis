@@ -139,7 +139,7 @@ section.hero-image-about h1{
 
 .hero-text-about{
     text-align: center;
-    padding: 50px;
+    padding-top: 80px;
 }
 
 .hero-text-about img{
@@ -149,9 +149,9 @@ section.hero-image-about h1{
 /* SOCIAL MEDIA */
 
 div ul.social-media-list-about{
-    width: 200px;
+    width: 250px;
     margin: auto;
-    padding-top: 25px;
+    padding-top: 60px;
     padding-left: 0px;
     color: #FCB69F;
     transition: 0.3s ease 0s;
@@ -166,7 +166,7 @@ div ul.social-media-list-about li{
 }
 
 ul.social-media-list-about li a img{
-    width: 50px;
+    width: 60px;
     border-radius: 50%;
     padding: 5px;
     background: #FFECD2;
@@ -178,6 +178,130 @@ div ul.social-media-list-about li a img:hover{
     box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.55);
 }
 
+/* MY STORY */
+
+section.story{
+    text-align: center;
+    color: #385959;
+    width: 100%;
+}
+
+div.mystory{
+    background: rgba(255, 236, 210, 0.65);
+    height: 650px;
+}
+
+div.mystory .mystory-wrapper{
+    width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+div.mystory-pic{
+    height: 300px;
+    background-image: linear-gradient(98.24deg, rgba(255, 236, 210, 0.65),rgba(252, 182, 159, 0.65)), url("pictures/mystorypic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.inspirations{
+    background: rgba(255, 236, 210, 0.65);
+    height: 650px;
+}
+
+div.inspirations div.inspirations-wrapper{
+    width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+div.inspirations-pic{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(98.24deg, rgba(255, 236, 210, 0.65),rgba(252, 182, 159, 0.65)), url("pictures/inspirationspic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.above65{
+    height: 400px;
+    width: 100%;
+    background: rgba(255, 236, 210, 0.65);
+    text-align: center;
+    padding: 0;
+}
+
+div.above65 .above65-wrapper{
+    width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+div.above65 a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #385959;
+    font-size: 18px;
+    line-height: 1.85em;
+    letter-spacing: 0.085;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFECD2;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    transition: all 1s ease 0s;
+}
+
+div.above65 a:hover{
+    color: #385959;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background: none;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+/* FOOTER */
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #385959;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    list-style-type: none;
+    white-space: nowrap;
+    background-color: #385959;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #FFECD2;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+footer nav ul li a:hover{
+    color: #FCB69F;
+    opacity: 1;
+    letter-spacing: 2px;
+}
+
 /* respinsive ws */
 
 
@@ -187,6 +311,11 @@ div ul.social-media-list-about li a img:hover{
             justify-content: space-around;
             width: 50%;
             letter-spacing: normal;
+        }
+        footer ul{
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
         }
     }
 
@@ -231,7 +360,7 @@ div ul.social-media-list-about li a img:hover{
         }
         p{
             font-size: 18px;
-            line-height: 1.4em;
+            line-height: 1.6em;
         }
         div ul.social-media-list{
             width: 150px;
@@ -240,21 +369,64 @@ div ul.social-media-list-about li a img:hover{
         div ul.social-media-list li a img{
            max-width: 35px;
         }
-}
+
+        div.mystory div.mystory-wrapper{
+            width: 400px;
+        }
+
+        div.mystory-pic{
+            height: 200px;
+        }
+
+        div.inspirations div.inspirations-wrapper{
+            width: 400px;
+        }
+
+        div.inspirations-pic{
+            height: 200px;
+        }
+
+        div.above65 div.above65-wrapper{
+            width: 400px;
+        }
+
+        footer ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 2em;
+        }
+        footer nav{
+            height: 200px;
+        }
+        div.above65 a{
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
 
 @media screen and (max-width: 400px){
     
     .hero-image-about {
-        height: 550px;
+        height: 400px;
     }
 
     .hero-text-about{
         padding: 25px;
     }
     
-    .hero-text img{
+    .hero-image-about .hero-text-about img{
         width: 200px;
-        text-align: center;
+    }
+
+    section.hero-image-about div.hero-text-about ul{
+        padding-top: 25px;
+    }
+
+    section.hero-image-about h1{
+        padding-top: 0px;
     }
 
     .hero-text p{
@@ -264,7 +436,7 @@ div ul.social-media-list-about li a img:hover{
     }
 
     h1{
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         letter-spacing: 2px;
         padding: 0px;
@@ -275,7 +447,9 @@ div ul.social-media-list-about li a img:hover{
     }
     
     .social-media-list-about{
-        width: 120px;
+        max-width: 180px;
+        padding-left: 0px;
+        padding-top: 0px;
     }
 
     .social-media-list-about li a img{
@@ -287,4 +461,62 @@ div ul.social-media-list-about li a img:hover{
         text-align: center;
         margin: auto;
     }
+    
+    div.mystory{
+        height: 400px;
+    }
+
+    div.mystory div.mystory-wrapper{
+        width: 250px;
+    }
+
+    div.mystory-pic{
+        height: 150px;
+    }
+
+    div.inspirations{
+        height: 400px;
+    }
+
+    div.inspirations div.inspirations-wrapper{
+        width: 250px;
+    }
+
+    div.inspirations-pic{
+        height: 150px;
+    }
+
+    div.above65{
+        height: 240px;
+    }
+
+    div.above65 div.above65-wrapper{
+        width: 250px;
+    }
+
+    footer ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2em;
+    }
+    footer nav{
+        height: 200px;
+    }
+    
+    div.above65 a{
+        font-size: 12px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+
+    div.above65 div.button a:hover{
+        color: #385959;
+        font-weight: 700;
+        letter-spacing: 5px;
+        background: none;
+        box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
 }        
