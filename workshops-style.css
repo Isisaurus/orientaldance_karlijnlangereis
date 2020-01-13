@@ -3,7 +3,6 @@ body{
     padding: 0 px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background: #385959;
 }
 
 h1{
@@ -11,7 +10,7 @@ h1{
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     display: inline-block;
     border-bottom: 2px solid currentColor;
     padding-top: 15px;
@@ -24,16 +23,593 @@ p{
     letter-spacing: 2px;
 }
 
-div{
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    color: #FFECD2;
+div.loc{
+    display: none;
 }
 
-img{
-    display: block;
-    max-width: 400px;
-    margin: auto;
-    padding: 50px 0px 20px 0px;
+/* NAVBAR */
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #385959;
+    text-align: center;
+    width: 100%;
 }
+
+header .logo a img{
+    width: 40px;
+}
+
+header .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+header .nav-links a{
+    color: #FFECD2;
+    text-decoration: none;
+    font-weight: normal;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+header .nav-links .workshop{
+    color: #FCB69F;
+    opacity: 1;
+}
+
+header nav ul li a{
+    transition: 0.3s ease 0s;
+}
+
+header nav .language{
+    text-decoration: none;
+    color: #FFECD2;
+    opacity: 0.7;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease 0s;
+}
+
+header nav .language .english{
+    color: #FCB69F;
+    opacity: 1;
+}
+
+header nav .language:hover{
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+header nav ul li a:hover{
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+/* BURGER MENU */
+
+header .burger{
+    display: none;
+    color: #FFECD2;
+    text-align: right;
+    line-height: 70px;
+}
+header .burger .menu{
+    padding-bottom: 70px;
+    background-color: #385959;
+}
+header .burger .menu a{
+    clear: right;
+    text-decoration: none;
+    color: #FFECD2;
+    line-height: 3.5em;
+    letter-spacing: 2px;
+    transition: 0.3s ease 0s;
+}
+
+label {
+    padding-right: 40px;
+    font-size: 25px;
+    width: 25px;
+    float: right;
+    position: relative;
+    top:-70px;
+    z-index: 1;
+}
+#toggle{
+    position: relative;
+    top: -70px;
+    display: none;
+}
+
+header .burger .menu  a:hover{
+    transition: 0.3s ease 0s;
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+/* BANNER */
+
+.hero-image-about {
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(98.24deg, rgba(255, 236, 210, 0.75),rgba(252, 182, 159, 0.75)), url("pictures/workshopsbanner.png");
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image-about .introwrap{
+    color: #385959;
+    font-weight: 500;
+    width: 650px;
+    margin: auto;
+}
+
+section.hero-image-about h1{
+    color: #385959;
+    padding-top: 10px;
+}
+
+.hero-text-about{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero-text-about img{
+    width: 310px;
+}
+
+.hero-image-about .button a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #385959;
+    font-size: 18px;
+    line-height: 1.85em;
+    letter-spacing: 0.085;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFECD2;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    transition: all 1s ease 0s;
+}
+
+.hero-image-about .button a:hover{
+    color: #385959;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background: rgba(255, 236, 210, 0.75);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+/* Above65 */
+div.above65{
+    color: #385959;
+    height: 300px;
+    width: 100%;
+    background: rgba(255, 236, 210, 0.65);
+    text-align: center;
+    padding: 0;
+    
+}
+
+div.above65 .above65-wrapper{
+    width: 650px;
+    margin: auto;
+}
+
+/* performance */
+div.perf{
+    color: #385959;
+    height: 300px;
+    width: 100%;
+    background: rgba(255, 236, 210, 0.65);
+    text-align: center;
+    padding: 0;
+}
+
+div.perf .perf-wrapper{
+    width: 650px;
+    margin: auto;
+}
+div.perf-img{
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(98.24deg, rgba(255, 236, 210, 0.85),rgba(252, 182, 159, 0.65)), url("pictures/31755293_225640161530854_2385348574759092224_o.jpg");
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    background: linear-gradient(98.24deg, rgba(255, 236, 210, 0.65),rgba(252, 182, 159, 0.65));
+}
+
+.bottom .button a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #385959;
+    font-size: 18px;
+    line-height: 1.85em;
+    letter-spacing: 0.085;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFECD2;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    transition: all 1s ease 0s;
+}
+
+.bottom .button a:hover{
+    color: #385959;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background: rgba(255, 236, 210, 0.75);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.bottom .bottom-wrapper{
+    width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.bottom .bottom-wrapper p{
+    color: #385959;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+/* FOOTER */
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #385959;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    list-style-type: none;
+    white-space: nowrap;
+    background-color: #385959;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #FFECD2;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+footer nav ul li a:hover{
+    color: #FCB69F;
+    opacity: 1;
+    letter-spacing: 2px;
+}
+
+
+/* RESPONSIVITY */
+
+@media screen and (max-width: 1024px){
+    header nav .nav-links{
+        width: 70%;
+        letter-spacing: normal;
+    }
+     footer ul{
+         display: flex;
+         justify-content: space-around;
+         width: 90%;
+         letter-spacing: normal;
+    }
+ }
+
+ @media screen and (max-width: 768px){
+    div.loc{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 10px;
+        color: rgba(252, 182, 159, 0.7);
+        z-index: 0;
+    }
+    
+    header nav .nav-links ul{
+        position: relative;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: normal;
+    }
+    /* burger menu */
+        header nav .language{
+            display: none;
+        }
+        header .burger{
+            display: block;
+        }
+
+        header .burger label{
+            cursor: pointer;
+        }
+
+        header .burger .menu{
+            text-align: center;
+            width: 100%;
+            height: 350px;
+            display: none;
+        }
+
+        header .burger .menu .workshop{
+            color: #FCB69F;
+        }
+        header .burger .menu .language{
+            font-weight: 600;
+        }
+        header .burger .menu .language .english{
+            color: #FCB69F;
+        }
+        header .burger a{
+            display: block;
+        }
+
+        #toggle:checked + .menu {
+            display: block;
+        }
+
+    .nav-links li{
+        display: none;
+    }
+
+    header nav .language{
+        position: absolute;
+        right: 20%;
+    }
+
+    .hero-text img{
+        width: 300px;
+        text-align: center;
+    }
+
+    .hero-text p{
+        font-size: 20px;
+        letter-spacing: 5px;
+        padding-top: unset;
+    }
+
+    h1{
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+
+    .hero-image-about .introwrap{
+        width: 400px;
+    }
+
+    div.above65{
+        height: 270px;
+    }
+
+    div.above65 div.above65-wrapper{
+        width: 400px;
+    }
+
+    div.perf{
+        height: 270px;
+    }
+
+    div.perf .perf-wrapper{
+        width: 400px;
+    }
+
+    div.perf-img{
+        height: 200px;
+    }
+
+    .bottom{
+        height: 130px;
+    }
+
+    .bottom .bottom-wrapper{
+        width: 400px;
+    }
+
+    .bottom div p{
+        font-size: 14px;
+    }
+
+    .bottom .button a{
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-top: 10px;
+    }
+
+    footer ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2em;
+    }
+    footer nav{
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    div.loc{
+        top: 20px;
+    }
+
+    .hero-image-about {
+        height: 400px;
+    }
+
+    .hero-text-about{
+        padding-top: 100px;
+    }
+
+    .hero-image-about .hero-text-about img{
+        width: 200px;
+        padding-top: 0;
+    }
+
+    .hero-image-about .button a{
+        font-size: 12px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+
+    .hero-image-about .button a:hover{
+        color: #385959;
+        font-weight: 700;
+        letter-spacing: 5px;
+        background: none;
+        box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+    }
+
+    h1{
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+    
+    .hero-image-about .introwrap{
+        width: 250px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    div.above65{
+        height: 180px;
+    }
+
+    div.above65 div.above65-wrapper{
+        width: 250px;
+    }
+
+        
+    .hero-image-about .button a{
+        font-size: 12px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+
+    .hero-image-about .button a:hover{
+        color: #385959;
+        font-weight: 700;
+        letter-spacing: 5px;
+        background: rgba(255, 236, 210, 0.75);
+        box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+    }
+
+    div.perf{
+        height: 200px;
+    }
+
+    div.perf .perf-wrapper{
+        width: 250px;
+    }
+
+    div.perf-img{
+        height: 120px;
+    }
+
+    .bottom{
+        height: 150px;
+    }
+
+    .bottom .bottom-wrapper{
+        width: 250px;    
+    }
+
+    .bottom .bottom-wrapper p{
+        font-size: 13px;
+    }
+
+    footer ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2em;
+    }
+    footer nav{
+        height: 200px;
+    }
+
+    .bottom .button a{
+        font-size: 12px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+
+    .bottom .button a:hover{
+        color: #385959;
+        font-weight: 700;
+        letter-spacing: 5px;
+        background: none;
+        box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+    }
+
+    header nav div.logo a img{
+        padding-left: 20px;
+    }
+} 

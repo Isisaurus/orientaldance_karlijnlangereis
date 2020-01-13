@@ -10,7 +10,7 @@ h1{
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     display: inline-block;
     border-bottom: 2px solid currentColor;
     padding-top: 15px;
@@ -511,19 +511,28 @@ footer nav ul li a:hover{
 }
 
 @media screen and (max-width: 400px){
-    .hero-image {
-        height: 250px;
+    header .logo a img{
+        padding-left: 20px;
     }
-    
-    .hero-text img{
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-text{
         width: 200px;
         text-align: center;
+        margin: auto;
+        top: 15%;
     }
+
+    .hero-image .hero-text img{
+        width: 200px;
+     }
 
     .hero-text p{
         font-size: 14px;
         letter-spacing: 3px;
-        padding-top: unset;
     }
 
     h1{
