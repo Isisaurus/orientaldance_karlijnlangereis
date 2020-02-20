@@ -3,7 +3,6 @@ body{
     padding: 0 px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background: #385959;
 }
 
 h1{
@@ -11,7 +10,7 @@ h1{
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     display: inline-block;
     border-bottom: 2px solid currentColor;
     padding-top: 15px;
@@ -24,16 +23,317 @@ p{
     letter-spacing: 2px;
 }
 
-div{
-    margin: auto;
-    width: 100%;
+/* NAVBAR */
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #385959;
     text-align: center;
-    color: #FFECD2;
+    width: 100%;
 }
 
-img{
-    display: block;
-    max-width: 400px;
-    margin: auto;
-    padding: 50px 0px 20px 0px;
+header .logo a img{
+    width: 40px;
 }
+
+header .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style-type: none;
+    white-space: nowrap;
+    background-color: #385959
+}
+
+header .nav-links a{
+    color: #FFECD2;
+    text-decoration: none;
+    font-weight: normal;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+header .nav-links .blog{
+    color: #FCB69F;
+    opacity: 1;
+}
+
+header nav ul li a{
+    transition: 0.3s ease 0s;
+}
+
+header nav .language{
+    text-decoration: none;
+    color: #FFECD2;
+    opacity: 0.7;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease 0s;
+}
+
+header nav .language .english{
+    color: #FCB69F;
+    opacity: 1;
+}
+
+header nav .language:hover{
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+header nav ul li a:hover{
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+/* BURGER MENU */
+
+header .burger{
+    display: none;
+    color: #FFECD2;
+    text-align: right;
+    line-height: 70px;
+}
+header .burger .menu{
+    padding-bottom: 70px;
+    background-color: #385959;
+}
+header .burger .menu a{
+    clear: right;
+    text-decoration: none;
+    color: #FFECD2;
+    line-height: 3.5em;
+    letter-spacing: 2px;
+    transition: 0.3s ease 0s;
+}
+
+label {
+    padding-right: 40px;
+    font-size: 25px;
+    width: 25px;
+    float: right;
+    position: relative;
+    top:-70px;
+}
+#toggle{
+    position: relative;
+    top: -70px;
+    display: none;
+}
+
+header .burger .menu  a:hover{
+    transition: 0.3s ease 0s;
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+/* social media and coming soon */
+
+section.socialmedia{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(98.24deg, rgba(255, 236, 210, 0.65),rgba(252, 182, 159, 0.65));
+    text-align: center;
+    padding: 0;
+}
+
+section.socialmedia p{
+    margin: 0;
+    padding: 30px;
+    color: #385959;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+div ul.social-media-list{
+    width: 180px;
+    margin: auto;
+    padding: 0;
+    color: #FCB69F;
+    transition: 0.3s ease 0s;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+div ul.social-media-list li{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-media-list li a img{
+    width: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    background: #FFECD2;
+    transition: all 0.3s ease 0s;
+}
+
+div ul.social-media-list li a img:hover{   
+    background: linear-gradient( rgba(252, 182, 159, 0.85), rgba(252, 182, 159, 0.15));
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.55);
+    /* background: #FFECD2; */
+}
+
+/* section */
+section.img{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(98.24deg, rgba(255, 236, 210, 0.65),rgba(252, 182, 159, 0.65)), url("pictures/blogimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FOOTER */
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #385959;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    list-style-type: none;
+    white-space: nowrap;
+    background-color: #385959;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #FFECD2;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+footer nav ul li a:hover{
+    color: #FCB69F;
+    opacity: 1;
+    letter-spacing: 2px;
+}
+
+/* RESPONSIVE WS */
+
+@media screen and (max-width: 1024px){
+    header nav .nav-links{
+        width: 70%;
+        letter-spacing: normal;
+    }
+     footer ul{
+         display: flex;
+         justify-content: space-around;
+         width: 90%;
+         letter-spacing: normal;
+    }
+ }
+
+ @media screen and (max-width: 768px){
+    header nav .nav-links ul{
+        position: relative;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: normal;
+    }
+    /* burger menu */
+        header nav .language{
+            display: none;
+        }
+        header .burger{
+            display: block;
+        }
+
+        header .burger label{
+            cursor: pointer;
+        }
+
+        header .burger .menu{
+            text-align: center;
+            width: 100%;
+            height: 350px;
+            display: none;
+        }
+
+        header .burger .menu .blog{
+            color: #FCB69F;
+        }
+        header .burger .menu .language{
+            font-weight: 600;
+        }
+        header .burger .menu .language .english{
+            color: #FCB69F;
+        }
+        header .burger a{
+            display: block;
+        }
+
+        #toggle:checked + .menu {
+            display: block;
+        }
+
+    .nav-links li{
+        display: none;
+    }
+
+    header nav .language{
+        position: absolute;
+        right: 20%;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.6em;
+    }
+    
+    section div ul{
+        width: 40%;
+    }
+
+    footer ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2em;
+    }
+    footer nav{
+        height: 200px;
+    }
+
+    div.soon{
+        height: 60px;
+    }
+ }
+
+ @media screen and (max-width: 400px){
+    h1{
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 0px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+    section div a .logo{
+        width: 200px;
+    }
+ }

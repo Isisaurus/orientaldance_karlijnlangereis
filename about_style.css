@@ -334,9 +334,7 @@ footer nav ul li a:hover{
 
 @media screen and (max-width: 1024px){
         header nav .nav-links{
-            display: flex;
-            justify-content: space-around;
-            width: 50%;
+            width: 70%;
             letter-spacing: normal;
         }
         footer ul{
